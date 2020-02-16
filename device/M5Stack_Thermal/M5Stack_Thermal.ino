@@ -19,8 +19,11 @@
         * Display spot, minimal and maximal reading
         * Display FPS (should be 13 btw)
         * Frozen state (Press B)
+        * *WiFi AP connectivitiy
         * *Send Payload to Azure IoT Central
         * *Send Thermal Array to IoT Edge Module
+        * *Alert Notification
+        * *M5 Powser status access
 
     For instructions, please go to the repo. That header is too long.
 
