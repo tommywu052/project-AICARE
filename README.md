@@ -14,65 +14,52 @@ Project AI CARE for thermal and face mask detection , Plese refer the detail ste
 ![](media/sysarchi.png)
 
 1.  Mask Training –
-
-
 2.  IoT Edge –
-
-
 3.  IoT Central –
-
-
 4.  BoT Service –
-
-
 5.  Power BI + CosmosDB –
 
-
 6.  **Hands-On Guide Tutorial** -
-
--   **Device Side** –
-
-    1.  M5StackCore –
-
+-   **Device Side**
+    - 6.1.  M5StackCore or Any other Azure Certified Device or Rasiperry Pi –
         1.  Development & Pinout Reference –
             <https://docs.m5stack.com/#/en/quick_start/m5core/m5stack_core_get_started_Arduino_Windows>
 
         2.  Git clone from - <https://github.com/tommywu052/project-AICARE.git> 
         > Reference from https://github.com/m600x/M5Stack-Thermal-Camera 
 
-1.  Go to
-    [project-AICARE](https://github.com/tommywu052/project-AICARE)/[device](https://github.com/tommywu052/project-AICARE/tree/master/device)/**M5Stack_Thermal**/,
-    modify the code as below for your own wifi ssid / password and Azure IoT
-    Central device connection string.
+        3.  Go to
+        [project-AICARE](https://github.com/tommywu052/project-AICARE)/[device](https://github.com/tommywu052/project-              AICARE/tree/master/device)/**M5Stack_Thermal**/,
+        modify the code as below for your own wifi ssid / password and Azure IoT
+        Central device connection string.
 
-1.  ESP32 CAM –
+    - 6.2.  ESP32 CAM or Any other CSI Camera component –
 
--   Development & Pinout Reference –
+       1. Development & Pinout Reference –
     <https://www.instructables.com/id/ESP-32-Camera-Streaming-Video-Over-WiFi-Getting-St/>
+    - 6.3.  AMG 8833 or MLX90640 Thermal Camera –
 
 -   **Backend Side** –
 
     1.  Mask Training with Azure Custom Vision –
 
-![](media/3018cffa6745e4a716cae32e3f43f50f.png)
+    2.  Download Kiosk App : <http://aka.ms/kioskapp>
 
-1.  Download Kiosk App : <http://aka.ms/kioskapp>
-
-2.  Setting your training & prediction key in kiosk app from
+    3.  Setting your training & prediction key in kiosk app from
     <https://www.customvision.ai/> website.
 
-3.  Edge Computing with Azure IoT Edge -
+    4.  Edge Computing with Azure IoT Edge -
 
-1.  Refer the document
-    *https://github.com/Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi/tree/master/*
-    for IoT Edge setup, remember to choose amd64 for x64 platform.
+        1.  Refer the document
+        *https://github.com/Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi/tree/master/*
+        for IoT Edge setup, remember to choose amd64 for x64 platform.
 
-2.  Install the node-red IoT Edge module as -
-    <https://github.com/iotblackbelt/noderededgemodule>
+        2.  Install the node-red IoT Edge module as -
+        <https://github.com/iotblackbelt/noderededgemodule>
 
-3.  Import the code from
-    <https://github.com/tommywu052/project-AICARE/blob/master/backend/IoTEdge/AICare-nodered-flows.json>
-    into your node-red edge.
+        3.  Import the code from
+        <https://github.com/tommywu052/project-AICARE/blob/master/backend/IoTEdge/AICare-nodered-flows.json>
+        into your node-red edge.
 
 
 4.  Get the inference code from -
