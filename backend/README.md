@@ -1,5 +1,5 @@
 Backend README
-# System Architecture - ![]()
+# System Architecture - ![](../media/sysarchi.png)
 - Backend – Azure AI and IoT Services
   - Azure Custom Vision
   - Azure IoT Central
