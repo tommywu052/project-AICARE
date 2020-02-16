@@ -1,4 +1,4 @@
-# project-AICARE
+# Project-AICARE
 Project AI CARE for thermal and face mask detection
 # Demo Video : 
 >	AI Care Edge Demo - https://youtu.be/Wh_21go4Thg
