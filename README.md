@@ -11,6 +11,7 @@ Project AI CARE for thermal and face mask detection
 **System Overview**
 
 ![](media/30e0cdaac013b12cf1f05a9ed49d57b9.png)
+![](media/sysarchi.png)
 
 1.  Mask Training –
 
