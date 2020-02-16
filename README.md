@@ -63,7 +63,8 @@ Project AI CARE for thermal and face mask detection
         1.  Development & Pinout Reference –
             <https://docs.m5stack.com/#/en/quick_start/m5core/m5stack_core_get_started_Arduino_Windows>
 
-        2.  Git clone from - <https://github.com/tommywu052/project-AICARE.git>
+        2.  Git clone from - <https://github.com/tommywu052/project-AICARE.git> 
+        > Reference from https://github.com/m600x/M5Stack-Thermal-Camera 
 
 ![](media/ee8dd266a377b0a11727a57ac6d46e01.png)
 
