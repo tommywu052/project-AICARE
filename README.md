@@ -1,12 +1,12 @@
 # Project-AICARE
 Project AI CARE for thermal and face mask detection , Plese refer the detail steps on Hands-ond Guide(./Proejct AI Care Hands-On Guide.pdf)
 # Demo Video : 
-##	AI Care Edge Demo - https://youtu.be/Wh_21go4Thg
-##	AI Care Device hands-on -  https://youtu.be/d4HqonLCNmM 
-##	Mask Training by Custom Vision -  https://youtu.be/eEb9vfvgW0g 
-##	Mask Inference Demo with Custom Vision on IoT Edge - https://youtu.be/dXDriffeE6Q 
+##	1. AI Care Edge Demo - https://youtu.be/Wh_21go4Thg
+##	2. AI Care Device hands-on -  https://youtu.be/d4HqonLCNmM 
+##	3. Mask Training by Custom Vision -  https://youtu.be/eEb9vfvgW0g 
+##	4. Mask Inference Demo with Custom Vision on IoT Edge - https://youtu.be/dXDriffeE6Q 
 
-1.  **AI CARE System Architecture** –
+## AI CARE System Architecture –
 
 **System Overview**
 
@@ -62,69 +62,54 @@ Project AI CARE for thermal and face mask detection , Plese refer the detail ste
         into your node-red edge.
 
 
-4.  Get the inference code from -
+    5.  Get the inference code from -
     *https://github.com/tommywu052/project-AICARE/blob/master/backend/IoTEdge/yolocv-public.py*
 
->   Modify the code - line 22-24 as your device key on IoT Central :
+        1. Modify the code - line 22-24 as your device key on IoT Central :
 
-![](media/ad2556b1a63c3553ff7c73321cb45067.png)
+        2. Modify the code – line 63 as your image inference host at 5.5.1 step
 
->   Modify the code – line 63 as your image inference host at 5.5.1 step
+        3. Modify the code – line 261 as your ESP32 CAM streaming IP
+       (ex:192.168.43.138, port 81 is default MJPEG streaming )
 
-![](media/b4ce3810536f13b7d137747eed33f0ca.png)
+    6.  Power BI Dashboard -
 
->   Modify the code – line 261 as your ESP32 CAM streaming IP
->   (ex:192.168.43.138, port 81 is default MJPEG streaming )
+        1.  Refer the document for Real-Time Streaming –
+            <https://docs.microsoft.com/zh-tw/power-bi/service-real-time-streaming>
 
-![](media/c2695ccddda3c4a0600d13f7d8d7ae45.png)
+        2.  Add Real-Time widget with Web Content and Streaming data set -
 
-5.  Power BI Dashboard -
+        >   <https://docs.microsoft.com/zh-tw/power-bi/service-dashboard-add-widget>
 
-1.  Refer the document for Real-Time Streaming –
-    <https://docs.microsoft.com/zh-tw/power-bi/service-real-time-streaming>
+        3.  Note – Data on real-time dashboard is coming from IoT Central export as
+            Azure Event Hubs-
 
-2.  Add Real-Time widget with Web Content and Streaming data set -
+    7.  IoT Device Control and Monitoring on IoT Central -
 
->   <https://docs.microsoft.com/zh-tw/power-bi/service-dashboard-add-widget>
+        1.  Refer the document to Create Your IoT Central Dashboard Application -
+            <https://docs.microsoft.com/zh-tw/azure/iot-central/core/quick-deploy-iot-central>
 
-3.  Note – Data on real-time dashboard is coming from IoT Central export as
-    Azure Event Hubs-
+        2.  Device Configuration –
 
-1.  IoT Device Control and Monitoring on IoT Central -
+        >   Configure your device telemetry/settings/command/triggers on the device
+        >   template (mapping the code on the device side Arduino and python code)
 
--   Summary Dashboard - Data from Thermal/Camera Sensors and Alert Notification
-    Triggered
+        3.  Enable Alert Notification –
 
--   Device Control & Monitoring through command/settings pages
+        >   <https://docs.microsoft.com/zh-tw/azure/iot-central/core/quick-configure-rules>
 
-![](media/89896a718103755521f07b53e6436a4c.png)
+        ![](media/73cec919fca87d3a7afa674ca0c75c04.png)
 
-1.  Refer the document to Create Your IoT Central Dashboard Application -
-    <https://docs.microsoft.com/zh-tw/azure/iot-central/core/quick-deploy-iot-central>
-
-2.  Device Configuration –
-
->   Configure your device telemetry/settings/command/triggers on the device
->   template (mapping the code on the device side Arduino and python code)
-
-![](media/ad5c3f47a09f8e3d275369482097e17e.png)
-
-3.  Enable Alert Notification –
-
->   <https://docs.microsoft.com/zh-tw/azure/iot-central/core/quick-configure-rules>
-
-![](media/73cec919fca87d3a7afa674ca0c75c04.png)
-
-1.  If you just want to copy my existing application template quickly , Please
+        4.  If you just want to copy my existing application template quickly , Please
     create your application based my share template, click the below -
     <https://apps.azureiotcentral.com/build/new/7490af0a-4e9c-4b54-b7a6-bd0c6092e522>
 
-2.  (To-Do) Azure BOT service integration –
-Check this for more detail notification -
-<https://docs.microsoft.com/zh-tw/azure/bot-service/bot-builder-tutorial-basic-deploy?view=azure-bot-service-4.0&tabs=csharp>
+    8.  (To-Do) Azure BOT service integration –
+        1. Check this for more detail notification -
+        <https://docs.microsoft.com/zh-tw/azure/bot-service/bot-builder-tutorial-basic-deploy?view=azure-bot-service-4.0&tabs=csharp>
 
-LINE Integration -
-<https://docs.microsoft.com/zh-tw/azure/bot-service/bot-service-channel-connect-line?view=azure-bot-service-4.0>
+        2. LINE Integration -
+        <https://docs.microsoft.com/zh-tw/azure/bot-service/bot-service-channel-connect-line?view=azure-bot-service-4.0>
 
 
 
